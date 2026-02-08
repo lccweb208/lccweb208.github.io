@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main, header {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #33495a;
+}
+a {
+    color: #a85149;
+    text-decoration: none;
+}
+a:hover {
+    color: #33495a;
+    text-decoration: underline;
+}
+footer, footer p {
+    background-color: #a85149;
+    color: #fff;
+    font-size: small;
+    text-align: center;
+    padding: 2% 0;
+}
+p {
+    line-height: 1.5rem;
+    color: #202020;
+}
+article img {
+    border-radius: 10px;
+}
+article h3{
+    color: #a85149;
+}
+#hero {
+    height: 400px;
+    background-image: url(images/hotel_front.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+nav {
+    clear: both;
+}
+header img {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.tagline {
+    font-family: "Dancing Script", cursive;
+    color: #a85149;
+    float: right;
+    font-size: 1.1rem;
+    position: relative;
+    top: 25px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #33495a;
+    text-align: center;
+}
+nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+}
+nav li a:hover {
+    color: #fff;
+    background-color: #a85149;
+    text-decoration: none;
+}
+.clearfix{
+    clear: both;
+}
+@media screen and (min-width: 481px){
+    nav ul {
+        overflow: hidden;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    nav {
+        background-color: #33495a;
+        clear: both;
+    }
+    nav li {
+        float: left;
+    }
+    nav li a {
+        padding: 14px 16px;
+    }
+    
+    #hero {
+        height: 60vh;
+    }
+}
+@media screen and (min-width: 768px) {
+    article {
+        width: 31.333%;
+        float: left;
+        padding-right: 2%;
+    }
+    .tagline {
+        font-size: 1.5rem;
+        top: 15px;
+    }
+}
